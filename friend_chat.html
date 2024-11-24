@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Csevegés</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar">
+  <a href="index.html" class="icon" title="Home">🏠</a>
+  <a href="friend_chat.html " class="icon active" title="Üzenetek">💬</a>
+  <a href="server_chat.html" class="icon" title="Szerverek">🌐</a>
+</div>
+<div class="content">
+  <header>
+    <h1>Csevegés</h1>
+    <nav>
+      <div class="friend-search-container" id="searchbar">
+        <label>
+          <input type="text" class="friend-search-input" placeholder="Felhasználó keresése..." />
+        </label>
+        <div class="friend-search-results hidden">
+          <ul>
+            <li>
+              <span class="friend-name">János</span>
+              <button class="add-friend-button">Hozzáadás</button>
+            </li>
+            <li>
+              <span class="friend-name">Júlia</span>
+              <button class="add-friend-button">Hozzáadás</button>
+            </li>
+            <li>
+              <span class="friend-name">Sanyika</span>
+              <button class="add-friend-button">Hozzáadás</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <div class="notifications-container">
+      <button class="notification-button">🔔</button>
+      <div class="notifications hidden">
+        <ul>
+          <li>Új barátkérelem: Anna.</li>
+          <li>Üzenetedet kedvelte: Balázs.</li>
+          <li>Közelgő esemény: Játék Est.</li>
+        </ul>
+      </div>
+    </div>
+      <div class="language-container">
+        <button class="language-button">🇭🇺</button>
+        <div class="language-menu hidden">
+          <ul>
+            <li>Magyar</li>
+            <li>English</li>
+            <li>Deutsch</li>
+          </ul>
+        </div>
+      </div>
+    <button class="logout">Kijelentkezés</button>
+    </nav>
+  </header>
+  <div class="main">
+    <aside class="server-list">
+      <h2>Barátok</h2>
+      <ul class="friend-list">
+        <li>
+          <span class="friend-status online"></span>
+          <span class="friend-name">Anna</span>
+          <div class="menu-container">
+            <button class="menu-button">⋮</button>
+            <div class="dropdown-menu hidden">
+              <button class="dropdown-item block-button">Letiltás</button>
+              <button class="dropdown-item block-button">Üzenet</button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="friend-status away"></span>
+          <span class="friend-name">Balázs</span>
+          <div class="menu-container">
+            <button class="menu-button">⋮</button>
+            <div class="dropdown-menu hidden">
+              <button class="dropdown-item block-button">Letiltás</button>
+              <button class="dropdown-item block-button">Üzenet</button>
+            </div>
+          </div>
+        </li>
+        <li>
+          <span class="friend-status offline"></span>
+          <span class="friend-name">Csaba</span>
+          <div class="menu-container">
+            <button class="menu-button">⋮</button>
+            <div class="dropdown-menu hidden">
+              <button class="dropdown-item block-button">Letiltás</button>
+              <button class="dropdown-item block-button">Üzenet</button>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </aside>
+    <section class="chat-section">
+      <h2>Csevegés Csabával</h2>
+      <div class="chat-window">
+        <div class="message"><span class="avatar">D</span><span>Szia, hogy vagy?</span></div>
+        <div class="message self"><span class="avatar">Y</span><span>Jól, köszönöm!</span></div>
+        <div class="message"><span class="avatar">D</span><span>Akarsz később játszani?</span></div>
+      </div>
+      <div class="chat-input">
+        <label>
+          <input type="text" placeholder="Üzenet...">
+        </label>
+        <button class="send">➡️</button>
+        <button class="call">📞</button>
+      </div>
+    </section>
+  </div>
+</div>
+<script src="szkript.js"></script>
+</body>
+</html>

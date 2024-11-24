@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Szerver csevegés</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="sidebar">
+  <a href="index.html" class="icon" title="Home">🏠</a>
+  <a href="friend_chat.html" class="icon" title="Üzenetek">💬</a>
+  <a href="server_chat.html" class="icon active" title="Szerverek">🌐</a>
+</div>
+<div class="content">
+  <header>
+    <h1>Szerverek</h1>
+    <nav>
+      <div class="friend-search-container" id="searchbar">
+        <label>
+          <input type="text" class="friend-search-input" placeholder="Felhasználó keresése..." />
+        </label>
+        <div class="friend-search-results hidden">
+          <ul>
+            <li>
+              <span class="friend-name">János</span>
+              <button class="add-friend-button">Hozzáadás</button>
+            </li>
+            <li>
+              <span class="friend-name">Júlia</span>
+              <button class="add-friend-button">Hozzáadás</button>
+            </li>
+            <li>
+              <span class="friend-name">Sanyika</span>
+              <button class="add-friend-button">Hozzáadás</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <div class="notifications-container">
+      <button class="notification-button">🔔</button>
+      <div class="notifications hidden">
+        <ul>
+          <li>Új barátkérelem: Anna.</li>
+          <li>Üzenetedet kedvelte: Balázs.</li>
+          <li>Közelgő esemény: Játék Est.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="pinned-messages-container">
+      <button class="pin-button">📌</button>
+      <div class="pinned-messages hidden">
+        <ul>
+          <li>Üdvözlünk a szerveren!</li>
+          <li>Nézd meg az #értesítések csatornát!</li>
+          <li>Karbantartás pénteken 22:00 órakor.</li>
+        </ul>
+      </div>
+    </div>
+      <div class="language-container">
+        <button class="language-button">🇭🇺</button>
+        <div class="language-menu hidden">
+          <ul>
+            <li>Magyar</li>
+            <li>English</li>
+            <li>Deutsch</li>
+          </ul>
+        </div>
+      </div>
+    <button class="logout">Kijelentkezés</button>
+    </nav>
+  </header>
+  <div class="main">
+    <aside class="server-list">
+      <h2>Szerverek</h2>
+      <ul>
+        <li class="dropdown">
+          <div class="server-name active">🎮 Gaming Server</div>
+          <ul class="channel-list">
+            <li>Általános Chat</li>
+            <li  class="active">Játék Chat</li>
+            <li>🎧 Hangcsatorna</li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <div>🎉 Barátok</div>
+          <ul class="channel-list">
+            <li>Általános Chat</li>
+            <li>Kedvenc Filmek</li>
+            <li>🎧 Hangcsatorna</li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <div class="server-name">🏕️ Kalandorok</div>
+          <ul class="channel-list">
+            <li>Úti Tippek</li>
+            <li class="active">Túra Tervek</li>
+            <li>🎧 Hangcsatorna</li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <div class="server-name">🍲 Gasztronómia</div>
+          <ul class="channel-list">
+            <li>Receptek Megosztása</li>
+            <li>Éttermek Véleményezése</li>
+            <li>🎧 Hangcsatorna</li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <div class="server-name">💻 Tech</div>
+          <ul class="channel-list">
+            <li>Gadget Hírek</li>
+            <li class="active">Programozás</li>
+            <li>🎧 Hangcsatorna</li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <div class="server-name">🎶 Zene</div>
+          <ul class="channel-list">
+            <li>Általános Chat</li>
+            <li>Kedvenc Zenék</li>
+            <li>🎧 Hangcsatorna</li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <div class="server-name">🎲 Társasjáték</div>
+          <ul class="channel-list">
+            <li>Általános Chat</li>
+            <li class="active">Játék Stratégia</li>
+            <li>🎧 Hangcsatorna</li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <div class="server-name">⚽ Sport</div>
+          <ul class="channel-list">
+            <li>Meccs Elemzés</li>
+            <li>Edzéstippek</li>
+            <li>🎧 Hangcsatorna</li>
+          </ul>
+        </li>
+      </ul>
+    </aside>
+    <section class="chat-section">
+      <h2>Játék Chat</h2>
+      <div class="chat-window">
+        <div class="message"><span class="avatar">S</span><span>Üdv a szerveren!</span></div>
+        <div class="message"><span class="avatar">G</span><span>Valaki egy játék?</span></div>
+        <div class="message self"><span class="avatar">Y</span><span>Én benne vagyok!</span></div>
+      </div>
+      <div class="chat-input">
+        <label>
+          <input type="text" placeholder="Üzenet...">
+        </label>
+        <button class="send">➡️</button>
+        <button class="call">📞</button>
+      </div>
+    </section>
+  </div>
+</div>
+<script src="szkript.js"></script>
+</body>
+</html>
